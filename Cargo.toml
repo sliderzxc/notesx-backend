@@ -3,6 +3,20 @@ name = "notesx-backend"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+rocket = {version = "0.5.0-rc.2", features = ["json"]}
+serde = "1.0.136"
+dotenv = "0.15.0"
+
+[dependencies.mongodb]
+version = "2.2.0"
+default-features = false
+features = ["sync"]
+
+[[bin]]
+name = "main"
+path = "src/app/main.rs"
+
+[lib]
+name = "my_project"
+path = "src/lib.rs"
