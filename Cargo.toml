@@ -15,8 +15,4 @@ features = ["sync"]
 
 [[bin]]
 name = "main"
-path = "src/app/main.rs"
-
-[lib]
-name = "my_project"
-path = "src/lib.rs"
+path = "src/main.rs"
