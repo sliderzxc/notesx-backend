@@ -5,6 +5,7 @@ use rocket::routes;
 use crate::auth::data::repository::auth_repository_impl::AuthRepositoryImpl;
 use crate::auth::domain::repository::auth_repository::AuthRepository;
 use crate::auth::data::cloud::mongo_database::MongoDatabase;
+use crate::auth::domain::routes::sign_up_route::sign_up_route;
 
 mod auth;
 
@@ -30,5 +31,6 @@ async fn main() {
     let app = App::new().await;
     let _server = rocket::build()
         .manage(app)
-        .mount("/auth",routes![]);
+        .mount("/auth",routes![sign_up_route])
+        .launch().await;
 }

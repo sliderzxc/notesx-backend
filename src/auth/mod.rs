@@ -4,7 +4,6 @@ pub mod data {
     }
     pub mod entities {
         pub mod sign_up_data;
-        pub mod sign_up_response;
     }
     pub mod repository {
         pub mod auth_repository_impl;

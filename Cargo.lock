@@ -1239,6 +1239,7 @@ dependencies = [
 name = "notesx-backend"
 version = "0.1.0"
 dependencies = [
+ "async-std",
  "dotenv",
  "mongodb",
  "rocket",
