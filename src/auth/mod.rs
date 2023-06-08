@@ -18,6 +18,6 @@ pub mod domain {
         pub mod sign_up_route;
     }
     pub mod usecases {
-
+        pub mod sign_up_use_case;
     }
 }

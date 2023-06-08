@@ -8,6 +8,6 @@ pub fn sign_up_route(
     app: &State<App>,
     sign_up_data: Json<SignUpData>
 ) -> Json<String>{
-    app.auth_repository.sign_up(&sign_up_data);
+    app.sign_up_use_case.execute(&sign_up_data);
     Json("Hello".parse().unwrap())
 }
