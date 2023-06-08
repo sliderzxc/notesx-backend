@@ -1,5 +1,5 @@
-use crate::auth::data::entities::sign_up_data::SignUpData;
+use crate::auth::data::entities::sign_up_request_data::SignUpRequestData;
 
 pub trait AuthValidationDataRepository {
-    fn validate_sign_up_data(&self, sign_up_data: &SignUpData) -> bool;
+    fn validate_sign_up_data(&self, sign_up_data: &SignUpRequestData) -> bool;
 }

@@ -1,5 +1,5 @@
 use std::rc::Rc;
-use crate::auth::data::entities::sign_up_data::SignUpData;
+use crate::auth::data::entities::sign_up_request_data::SignUpRequestData;
 use crate::auth::domain::repository::auth_repository::AuthRepository;
 use crate::auth::domain::validation::auth_validation_data_repository::AuthValidationDataRepository;
 
@@ -16,7 +16,7 @@ impl SignUpUseCase {
         SignUpUseCase { auth_repository, auth_validation_data_repository }
     }
 
-    pub fn execute(&self, sign_up_data: &SignUpData) -> bool {
+    pub fn execute(&self, sign_up_data: &SignUpRequestData) -> bool {
         return if self.auth_validation_data_repository.validate_sign_up_data(sign_up_data) == false {
             false
         } else {
