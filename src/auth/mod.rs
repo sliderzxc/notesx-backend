@@ -8,6 +8,9 @@ pub mod data {
     pub mod repository {
         pub mod auth_repository_impl;
     }
+    pub mod validation {
+        pub mod auth_validation_data_repository_impl;
+    }
 }
 
 pub mod domain {
@@ -19,5 +22,8 @@ pub mod domain {
     }
     pub mod usecases {
         pub mod sign_up_use_case;
+    }
+    pub mod validation {
+        pub mod auth_validation_data_repository;
     }
 }
