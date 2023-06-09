@@ -3,7 +3,7 @@ use sha2::{Digest, Sha256};
 use crate::auth::data::entities::hashing::salted_hash::SaltedHash;
 use crate::auth::domain::security::hashing::hashing_service::HashingService;
 
-struct SHA256HashingService {}
+pub struct SHA256HashingService {}
 
 impl HashingService for SHA256HashingService {
     fn generate_salt(&self, salt_length: usize) -> String {
