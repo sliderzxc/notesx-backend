@@ -3,13 +3,15 @@ pub mod data {
         pub mod mongo_database;
     }
     pub mod entities {
+        pub mod hashing {
+            pub mod salted_hash;
+        }
         pub mod sign_up {
             pub mod sign_up_cloud_data;
             pub mod sign_up_request_data;
             pub mod sign_up_response_data;
         }
         pub mod token {
-            pub mod token_config;
             pub mod token_claim;
         }
     }
@@ -18,7 +20,7 @@ pub mod data {
     }
     pub mod security {
         pub mod hashing {
-
+            pub mod hashing_service_impl;
         }
         pub mod token {
             pub mod token_service_impl;
@@ -38,7 +40,7 @@ pub mod domain {
     }
     pub mod security {
         pub mod hashing {
-
+            pub mod hashing_service;
         }
         pub mod token {
             pub mod token_service;
