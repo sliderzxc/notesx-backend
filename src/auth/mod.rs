@@ -13,6 +13,7 @@ pub mod data {
         }
         pub mod token {
             pub mod token_claim;
+            pub mod token_config;
         }
     }
     pub mod repository {

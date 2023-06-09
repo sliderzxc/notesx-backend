@@ -12,6 +12,9 @@ regex = "1.8.4"
 jsonwebtoken = "8.3.0"
 bcrypt = "0.14.0"
 rand = "0.8.5"
+sha2 = "0.10.6"
+chrono = "0.4.26"
+hex = "0.4.3"
 
 [dependencies.mongodb]
 version = "2.2.0"

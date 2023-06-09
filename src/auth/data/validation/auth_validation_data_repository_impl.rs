@@ -1,5 +1,5 @@
 use regex::Regex;
-use crate::auth::data::entities::sign_up_request_data::SignUpRequestData;
+use crate::auth::data::entities::sign_up::sign_up_request_data::SignUpRequestData;
 use crate::auth::domain::validation::auth_validation_data_repository::AuthValidationDataRepository;
 
 pub struct AuthValidationDataRepositoryImpl;

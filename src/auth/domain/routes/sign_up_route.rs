@@ -1,7 +1,7 @@
 use rocket::{serde::json::Json, State};
 use rocket::post;
 use crate::App;
-use crate::auth::data::entities::sign_up_request_data::SignUpRequestData;
+use crate::auth::data::entities::sign_up::sign_up_request_data::SignUpRequestData;
 
 #[post("/signup", data = "<sign_up_data>")]
 pub fn sign_up_route(

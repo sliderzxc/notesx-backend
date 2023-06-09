@@ -1,6 +1,6 @@
 use async_std::task;
 use mongodb::Database;
-use crate::auth::data::entities::sign_up_request_data::SignUpRequestData;
+use crate::auth::data::entities::sign_up::sign_up_request_data::SignUpRequestData;
 use crate::auth::domain::repository::auth_repository::AuthRepository;
 
 pub struct AuthRepositoryImpl {
